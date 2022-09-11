@@ -1,6 +1,7 @@
 Exercise 1:
 
-
+SELECT name,LEFT(min(earnings_rank) )
+FROM Movie;
 
 
 Exercise 2:
