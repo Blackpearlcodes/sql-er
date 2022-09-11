@@ -1,0 +1,7 @@
+SELECT name FROM room WHERE capacity;
+SELECT MIN(start_time) FROM course;
+SELECT COUNT(student_id) FROM majorsin;
+SELECT COUNT(student_id) FROM majorsin WHERE dept_name = "BIF";
+SELECT id FROM student MINUS (SELECT student_id FROM enrolled);
+SELECT student_id FROM majorsin WHERE dept_name="CS" INNER JOIN student_id ON enrolled course_name="CSC275";
+SELECT student_id FROM majorsin WHERE dept_name="CS" INNER JOIN student_id ON majorsin dept_name="CS";
